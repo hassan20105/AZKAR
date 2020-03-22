@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/design"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    tools:context=".Activities.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/azkar_imageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:onClick="onClickAzan"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:srcCompat="@drawable/pray" />
+
+            <TextView
+                android:id="@+id/azkar_textView"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:shadowColor="#F2E4BD"
+                android:onClick="onClickAzan"
+                android:text="أذكار المسلم"
+                android:textAlignment="center"
+                android:textColor="#C9C9C9"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/azan_imageView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="onClickAzan"
+                android:padding="10dp"
+                app:srcCompat="@drawable/imosque" />
+
+            <TextView
+                android:id="@+id/azan_textView"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onClickAzan"
+                android:shadowColor="#F2E4BD"
+                android:text="مواقيت الصلأه"
+                android:textAlignment="center"
+                android:textColor="#C9C9C9"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:srcCompat="@drawable/nouvels" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:shadowColor="#F2E4BD"
+                android:text="قصص الانبيأء"
+                android:textAlignment="center"
+                android:textColor="#C9C9C9"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                app:srcCompat="@drawable/video" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:shadowColor="#F2E4BD"
+                android:text="برامج دينية"
+                android:textAlignment="center"
+                android:textColor="#C9C9C9"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
