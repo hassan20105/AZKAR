@@ -8,6 +8,7 @@ import com.hisnElMuslem.myapplication.Data.Factory.AppDatabase;
 import com.hisnElMuslem.myapplication.Data.ZekrDao;
 import com.hisnElMuslem.myapplication.Model.ZekrItems;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AzkarDBServices implements ZekrDao {
@@ -36,6 +37,11 @@ public class AzkarDBServices implements ZekrDao {
     @Override
     public List<ZekrItems> selectZekrDetail(String input) {
         return db.zekrDao().selectZekrDetail(input);
+    }
+
+    @Override
+    public List<String> selectZekrOnly(String input) {
+        return db.zekrDao().selectZekrOnly(input);
     }
 
     @Override

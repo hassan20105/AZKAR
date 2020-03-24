@@ -23,6 +23,7 @@ import com.hisnElMuslem.myapplication.Model.ZekrItems;
 import com.hisnElMuslem.myapplication.R;
 import com.hisnElMuslem.myapplication.Services.Databases.AzkarDBServices;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AzkarRecycleViewAdapter extends RecyclerView.Adapter<AzkarRecycleViewAdapter.ViewHolder>{
@@ -46,15 +47,14 @@ public class AzkarRecycleViewAdapter extends RecyclerView.Adapter<AzkarRecycleVi
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String zekrItems  = mData.get(position);
-        holder.categoryTV.setText(zekrItems);
+        String category = mData.get(position);
+        holder.categoryTV.setText(category);
         holder.categoryTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                context.startActivity(new Intent(context, AzkarDetailsActivity.class));
-                Toast.makeText(context, ""+azkarDBServices.selectZekrDetail(zekrItems).get(0).getZekr(), Toast.LENGTH_SHORT).show();
-
+                Intent intent = new Intent(context, AzkarDetailsActivity.class);
+                intent.putExtra("azkarList", (ArrayList) azkarDBServices.selectZekrOnly(category));
+                context.startActivity(intent);
             }
         });
 

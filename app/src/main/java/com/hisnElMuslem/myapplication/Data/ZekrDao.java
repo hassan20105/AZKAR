@@ -9,6 +9,7 @@ import androidx.room.Update;
 
 import com.hisnElMuslem.myapplication.Model.ZekrItems;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Dao
@@ -21,6 +22,11 @@ public interface ZekrDao {
     int deleteAllZekr();
     @Query("SELECT * FROM ZekrItems where Category= (:input)")
     List<ZekrItems> selectZekrDetail(String input);
+
+    @Query("SELECT zekr FROM ZekrItems where Category= (:input)")
+    List<String> selectZekrOnly(String input);
+
+
     @Query("SELECT * FROM ZekrItems")
     List<ZekrItems> selectZekrDetail();
     @Query("SELECT Distinct Category FROM ZekrItems")

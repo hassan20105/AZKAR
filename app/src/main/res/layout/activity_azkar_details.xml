@@ -7,10 +7,8 @@
     android:orientation="vertical"
     tools:context="com.hisnElMuslem.myapplication.Activities.AzkarDetailsActivity">
 
-    <FrameLayout
-        android:id="@+id/dynamicFrame"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </FrameLayout>
+        android:layout_height="match_parent" />
 </LinearLayout>
