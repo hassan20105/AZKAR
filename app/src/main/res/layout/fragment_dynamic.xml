@@ -4,20 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ddd"
-    android:orientation="vertical"
-   >
+    android:orientation="vertical">
 
 
     <TextView
         android:id="@+id/display_TV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|fill"
-        android:layout_marginTop="400dp"
+        android:layout_margin="5dp"
         android:gravity="center"
         android:text="display_TV"
-        android:textColor="#283593"
+        android:textColor="#000000"
         android:textSize="18sp"
         android:textStyle="normal|bold" />
 </LinearLayout>
